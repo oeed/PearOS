@@ -12,13 +12,13 @@ For more information look here and here.
 Screenshots
 ===========
 PearOS's (and obviously OS X's) menus are at the top of the screen instead of on the window. The menus are specific to the current application.
-![Imgur](http://i.imgur.com/evS8mpg)
+![Imgur](http://i.imgur.com/evS8mpg.png)
 
 System Preferences, the OS X version of 'Control Panel'
-![Imgur](http://i.imgur.com/UyWjAZt)
+![Imgur](http://i.imgur.com/UyWjAZt.png)
 
 PearOS supports multiple windows and applications open at once.
-![Imgur](http://i.imgur.com/2FrkEAm)
+![Imgur](http://i.imgur.com/2FrkEAm.png)
 
 Download
 ========
@@ -90,7 +90,7 @@ Essentially, when the computer is turning on and the screen is white, before the
 Keyboard Shortcuts
 ======
 I have been asked what the '#' means on the menus. The hash ('#') is the closest thing to the command symbol on OS X. See the below screenshot. Whenever you see one you can use the Command or Control  key + the letter listed to do that menu action instead. (Note: Due to the fact the Command + Q is captured the by OS [or Java, I'm not sure] on OS X you will have to use Control + Q) 
-![Imgur](http://i.imgur.com/1FuhZo6)
+![Imgur](http://i.imgur.com/1FuhZo6.png)
 
 I want to help, what can I do?
 ==============================
