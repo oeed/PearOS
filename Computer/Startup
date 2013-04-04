@@ -218,12 +218,10 @@ end
 
 
 if verbose then
-    term.scroll(1)
     term.setTextColor(colors.black)
     text = "Starting PearOS in verbose (debug) mode."
     local screensizex, screensizey = term.getSize()
     PrintCentered(text,screensizey/2+6)
-    sleep(1)
     init()
 else
 --Crash/Error Handling
@@ -247,8 +245,14 @@ if not ok then
 	term.setTextColor(colours.lightGrey)
 	term.setCursorPos(2,16)
 	print(err)
-	os.pullEvent("key","char","mouse_click","monitor_touch")
-	os.reboot()
+	sleep(0.3)
+	while true do
+		event = os.pullEvent()
+		if event == "key" or event == "char" or event == "mouse_click" or event == "monitor_touch" then
+			os.reboot()
+		end
+	end
+	
 end
  
 end

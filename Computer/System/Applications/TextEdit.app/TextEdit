@@ -2,7 +2,9 @@
 	windows = {}
 	version = "1"
 	id = 0
-	
+	name = "TextEdit"
+	author = "Oliver'oeed'Cooper"
+
 	init = function()
 		local filemenuItems = {
     			OSMenuItem:new("New", function() newWindow("") end,  "N"),
@@ -23,13 +25,7 @@
 	end
 	
 	about = function()
-		local aboutWindow = OSWindow:new("About "..name, {
-		OSImageView:new(7, 1, path.."/icon_l"),
-		OSLabel:new(7, 6, name),
-		
-		OSLabel:new(5, 11, "Version "..version)
-		}, 20,12, environment)
-		windows['about'] = aboutWindow
+		windows['about'] = OSAboutWindow:new(name, version, author, path, environment)
 	end	
 	
 	newWindow = function(_path)
@@ -83,7 +79,9 @@
 	end
 	
 	windowShouldClose = function(window)
-		saveFile(window.path, window.textView.text)
+		if window.textView then
+			saveFile(window.path, window.textView.text)
+		end
 		return true
 	end
 	

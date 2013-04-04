@@ -2,9 +2,10 @@
 	name = "System Preferences"
 	menus = {}
 	windows = {}
-	version = "0.9"
+	version = "0.2"
 	showHidden = false
-	id = 0	
+	id = 0
+	author = "Oliver'oeed'Cooper"
 	
 	init = function()
     		menus = {}
@@ -12,19 +13,7 @@
 	end
 	
 	about = function()
-		local licenceLabel = OSLabel:new(6, 10, "(c) 2013")
-		local secondLicenceLabel = OSLabel:new(1,11, "Oliver'oeed'Cooper")
-		licenceLabel.TextColour = colors.lightGray
-		secondLicenceLabel.TextColour = colors.lightGray
-	
-		local aboutWindow = OSWindow:new("", {
-		OSImageView:new(7, 1, path.."/icon_l"),
-		OSLabel:new(1, 6, "System Preferences"),
-		licenceLabel,
-		secondLicenceLabel
-		}, 20,12, environment)
-		
-		windows['about'] = aboutWindow
+		windows['about'] = OSAboutWindow:new(name, version, author, path, environment)
 	end
 
 	systemPreferences = function()

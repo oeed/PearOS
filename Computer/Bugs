@@ -1,0 +1,31 @@
+First run is resizeable
+Windows don't start centered
+Applications windows don't get focus
+Browsing Finder Crash: PearOS.lua:1782:vm error:(Java out of bounds exception)
+About Finder crashes,  Finder:203: index expected, got nil
+Crash when clicking on an 'About' window
+TextEdit wrapping now doesn't cut off during a word (thanks Kingdaro!)
+Menus stay open when dock icon is clicked (app open)
+-Prevent the whole screen from being redrawn every second
+Added buffering to drawing framework (no more flickering!)
+TextEdit crashing
+Resizing TextEdit doesn't work
+PearOS logo isn't center on boot (Thanks Leonardoas26)
+'Starting PearOS in verbose mode...' poorley placed (ditto)
+'Finder:203: index expected but got nil' when resizing 'About this Pear'
+
++ You can now open 'txt' files from Finder, support for registering an extention is there, but buggy
++ Modularised much of the code. (each object/group of functions is in its own file)
++ Cleaned up the code (indentation was broken because of Sublime Text)
++ Added 'About' window framework, this should prevent the many errors occuring
++ Windows now start in the middle of the screen
+
+Arrow key (vertical) missing from TextEdit
+Scrolling missing from TextEdit
+Selection is incorrect in TextEdit due to text wrapping
+Changing the desktop background doesn't do anything
+
+Finnish Rosseta
+Add wireless peripherals (80% done, disk drives are the only thing left)
+How to make an app
+There is no hold 'H' for help, I might not add this. Thoughts?
