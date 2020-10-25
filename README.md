@@ -24,10 +24,10 @@ Download
 ========
 
 Enter the following in to the shell:
-[quote]pastebin get LRFsvuN3 PearOS.pkg[/quote]
+`pastebin get LRFsvuN3 PearOS.pkg`
 (It will take some time [20+ seconds], just be patient.)
 
-Then run 'PearOS.pkg'.
+Then run `PearOS.pkg`.
 
 If you're interested, PearOS uses my packaging utility, Package Maker, to squash all of its ~70 files in to one automatically installing file. Rather than spending hours making some pointless web installer or having to use Dropbox, I simply entered a single shell command. Anyway, enough plugging, on with the post.
 
@@ -110,7 +110,7 @@ You are free to:
 Under the following conditions:
 - Attribution - You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work).
 - Noncommercial - You may not use this work for commercial purposes.
-- No Derivative Works - You may not alter, transform, or build upon this work. (With out permission from myself)
+- No Derivative Works - You may not alter, transform, or build upon this work. (Without permission from myself (oeed))
 
 With the understanding that:
 - Waiver - Any of the above conditions can be waived if you get permission from the copyright holder.
